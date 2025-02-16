@@ -9,6 +9,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"/>
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
       * {
         margin: 0;
@@ -20,7 +21,7 @@
         font-family:'Poppins',serif;
         font-weight: 700;
         font-style: bold;
-        font-size: larger;
+        font-size: 1.4rem;
       }
 
       nav{
@@ -39,6 +40,18 @@
       nav ul li{
         list-style: none;
         margin: 0 25px;
+      }
+
+      
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+
+      
+      nav ul li a:hover{
+        color: aqua;
+        font-size: 1.5rem;
       }
 
       .left{
@@ -66,7 +79,54 @@
       }
 
       .pop{
-        color: blueviolet;
+        color: aqua;
+      }
+
+      #element{
+        color: aqua;
+      }
+
+      .second{
+        max-width: 80vw;
+        margin: auto;
+      }
+
+      .icons a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        background: transparent;
+        border: 2px solid gold;
+        border-radius: 50%;
+        font-size: 30px;
+        color: gold;
+        text-decoration: none;
+        margin: 30px 15px 30px 0;
+      }
+
+      .icons a:hover{
+        background: gold;
+        color: black;
+        box-shadow: 0 0 20px gold, 0 0 50px gold;
+      }
+
+      .resume{
+        display: inline-block;
+        padding: 12px 28px;
+        background: aqua;
+        border-radius: 40px;
+        font-size: 25px;
+        color: black;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .resume:hover{
+        box-shadow: 0 0 5px aqua,
+        0 0 25px aqua, 0 0 50px aqua;
       }
 
     </style>
@@ -77,11 +137,11 @@
         <div class="left">Atharva's Portfolio</div>
         <div class="right">
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -91,12 +151,29 @@
       <section class="first">
         <div class="leftsection">
           Hi, My Name is <span class="pop">Atharva</span>
-          <div>and I am a Web Development Enthuist</div>
+          <div>and I am a Enthusiastic</div>
+          <span id="element"></span>
+          <div class="icons">
+            <a href=""><i class='bx bxl-linkedin'></i></a>
+            <a href=""><i class='bx bxl-github'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+          </div>
+          <a href="#" class="resume">Resume</a>
         </div>
         <div class="rightsection">
           <img src="web.png" alt="" srcset="">
         </div>
       </section>
+      <section class="second">
+        <h1>Past Experience</h1>
+      </section>
     </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Frontend Developer'],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>
