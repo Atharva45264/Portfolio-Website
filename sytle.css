@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(8, 8, 74);
+  color: white;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 1.8rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  background-color: rgb(53, 24, 155);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: aqua;
+  font-size: 1.9rem;
+}
+
+.left {
+  font-size: 1.8rem;
+}
+
+.left:hover{
+    color: aqua;
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+
+.first {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 190px 0;
+}
+
+.first > div {
+  width: 30%;
+}
+
+.leftsection {
+  font-size: 3rem;
+}
+
+.rightsection img {
+  width: 90%;
+}
+
+.pop {
+  color: aqua;
+}
+
+#element {
+  color: aqua;
+}
+
+.second {
+  max-width: 80vw;
+  margin: auto;
+}
+
+.second img {
+  width: 300px;
+}
+
+.about-section {
+  padding: 50px 10%;
+  background-color: rgb(8, 8, 74); /* Light background */
+}
+
+.about-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 400px; /* Space between image and text */
+}
+
+.leftabout img {
+  width: 600px; /* Adjust image size */
+  height: auto;
+  border-radius: 10px; /* Smooth rounded corners */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.rightabout {
+  flex: 1;
+  flex-direction: column;
+  justify-content: center; /* Aligns text vertically with image */
+}
+
+.rightabout h2 {
+  font-size: 3rem;
+  color: aqua;
+}
+
+.intro-text {
+  font-size: 1.8rem;
+  color: #007bff; /* Blue color for emphasis */
+  font-weight: bold;
+}
+
+.rightabout p {
+  font-size: 2rem;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leftabout img {
+    width: 80%; /* Make image responsive */
+  }
+}
+
+.icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid gold;
+  border-radius: 50%;
+  font-size: 40px;
+  color: gold;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
+}
+
+.icons a:hover {
+  background: gold;
+  color: black;
+  box-shadow: 0 0 20px gold, 0 0 50px gold;
+}
+
+.resume {
+  display: inline-block;
+  padding: 12px 28px;
+  background: aqua;
+  border-radius: 40px;
+  font-size: 25px;
+  color: black;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.resume:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px aqua, 0 0 35px aqua;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Add spacing between About and Services section */
+#services {
+    padding: 80px 10%;
+    background-color: rgb(8, 8, 74);
+    text-align: center;
+    margin-top: 350px; /* Extra space from About section */
+  }
+  
+  #services h2 {
+    font-size: 3rem;
+    color: aqua;
+    margin-bottom: 40px;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .service {
+    width: 200px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .service i {
+    font-size: 4rem;
+    color: gold;
+  }
+  
+  .service h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: white;
+  }
+  
+  /* Skill Bars */
+  .skill-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .skill-fill {
+    height: 100%;
+    background: gold;
+    transition: width 1s ease-in-out;
+  }
+  
+  .html { width: 100%; }
+  .css { width: 50%; }
+  .js { width: 40%; }
+  .python { width: 50%; }
+  .java { width: 40%; }
+  
+  .service span {
+    display: block;
+    margin-top: 5px;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  /* Hover effect */
+  .service:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px gold, 0 0 30px gold;
+  }
+    
