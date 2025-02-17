@@ -6,6 +6,7 @@
     <title>Atharva Portfolio Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="sytle.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -14,182 +15,6 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: rgb(8, 8, 74);
-        color: white;
-        font-family: "Poppins", serif;
-        font-weight: 700;
-        font-style: bold;
-        font-size: 1.4rem;
-      }
-
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 100px;
-        background-color: rgb(53, 24, 155);
-      }
-
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-
-      nav ul li {
-        list-style: none;
-        margin: 0 25px;
-      }
-
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-      }
-
-      nav ul li a:hover {
-        color: aqua;
-        font-size: 1.5rem;
-      }
-
-      .left {
-        font-size: 1.5rem;
-      }
-
-      .first {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 190px 0;
-      }
-
-      .first > div {
-        width: 30%;
-      }
-
-      .leftsection {
-        font-size: 3rem;
-      }
-
-      .rightsection img {
-        width: 90%;
-      }
-
-      .pop {
-        color: aqua;
-      }
-
-      #element {
-        color: aqua;
-      }
-
-      .second {
-        max-width: 80vw;
-        margin: auto;
-      }
-
-      .second img {
-        width: 300px;
-      }
-
-      .about-section {
-        padding: 50px 10%;
-        background-color: rgb(8, 8, 74); /* Light background */
-      }
-
-      .about-container {
-        display: flex;
-        align-items: stretch;
-        justify-content: space-between;
-        gap: 400px; /* Space between image and text */
-      }
-
-      .leftabout img {
-        width: 600px; /* Adjust image size */
-        height: auto;
-        border-radius: 10px; /* Smooth rounded corners */
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-      }
-      .rightabout {
-        flex: 1;
-        flex-direction: column;
-        justify-content: center; /* Aligns text vertically with image */
-      }
-
-      .rightabout h2 {
-        font-size: 3rem;
-        color: aqua;
-      }
-
-      .intro-text {
-        font-size: 1.8rem;
-        color: #007bff; /* Blue color for emphasis */
-        font-weight: bold;
-      }
-
-      .rightabout p {
-        font-size: 2rem;
-        color: white;
-        line-height: 1.6;
-      }
-
-      /* Responsive Design */
-      @media (max-width: 768px) {
-        .about-container {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .leftabout img {
-          width: 80%; /* Make image responsive */
-        }
-      }
-
-      .icons a {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 45px;
-        height: 45px;
-        background: transparent;
-        border: 2px solid gold;
-        border-radius: 50%;
-        font-size: 30px;
-        color: gold;
-        text-decoration: none;
-        margin: 30px 15px 30px 0;
-      }
-
-      .icons a:hover {
-        background: gold;
-        color: black;
-        box-shadow: 0 0 20px gold, 0 0 50px gold;
-      }
-
-      .resume {
-        display: inline-block;
-        padding: 12px 28px;
-        background: aqua;
-        border-radius: 40px;
-        font-size: 25px;
-        color: black;
-        letter-spacing: 1px;
-        text-decoration: none;
-        font-weight: 600;
-      }
-
-      .resume:hover {
-        box-shadow: 0 0 5px aqua, 0 0 25px aqua, 0 0 50px aqua;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -199,7 +24,7 @@
           <ul>
             <li><a href="">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="">Services</a></li>
+            <li><a href="#services">Skills</a></li>
             <li><a href="">Projects</a></li>
             <li><a href="">Contact</a></li>
           </ul>
@@ -232,10 +57,52 @@
           <div class="rightabout">
             <span class="intro-text">Let me introduce myself</span>
             <h2>About Me</h2>
-            <p>I am a third-year IT engineering student at Atharva College of Engineering with a strong interest in web development. I enjoy creating clean, user-friendly websites and always look for ways to improve my skills. I'm also eager to learn more about AI and ML to explore new possibilities in technology.</p>
+            <p>
+              I am a third-year IT engineering student at Atharva College of
+              Engineering with a strong interest in web development. I enjoy
+              creating clean, user-friendly websites and always look for ways to
+              improve my skills. I'm also eager to learn more about AI and ML to
+              explore new possibilities in technology.
+            </p>
           </div>
         </div>
       </section>
+      <section id="services" class="services-section">
+        <h2>My Skills</h2>
+        <div class="services-container">
+          <div class="service">
+            <i class="bx bxl-html5"></i>
+            <h3>HTML</h3>
+            <div class="skill-bar"><div class="skill-fill html"></div></div>
+            <span>100%</span>
+          </div>
+          <div class="service">
+            <i class="bx bxl-css3"></i>
+            <h3>CSS</h3>
+            <div class="skill-bar"><div class="skill-fill css"></div></div>
+            <span>50%</span>
+          </div>
+          <div class="service">
+            <i class="bx bxl-javascript"></i>
+            <h3>JavaScript</h3>
+            <div class="skill-bar"><div class="skill-fill js"></div></div>
+            <span>40%</span>
+          </div>
+          <div class="service">
+            <i class="bx bxl-python"></i>
+            <h3>Python</h3>
+            <div class="skill-bar"><div class="skill-fill python"></div></div>
+            <span>50%</span>
+          </div>
+          <div class="service">
+            <i class="bx bxl-java"></i>
+            <h3>Java</h3>
+            <div class="skill-bar"><div class="skill-fill java"></div></div>
+            <span>40%</span>
+          </div>
+        </div>
+      </section>      
+      </section>      
     </main>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
