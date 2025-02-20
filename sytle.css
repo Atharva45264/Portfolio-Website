@@ -27,6 +27,11 @@ nav {
   color: white;
 }
 
+.left:hover{
+  color: aqua;
+  cursor: pointer;
+}
+
 /* Hamburger Menu */
 .hamburger {
   display: none;
@@ -53,11 +58,13 @@ nav {
 .offcanvas-menu ul li a {
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   transition: 0.3s ease-in-out;
 }
 
 .offcanvas-menu ul li a:hover {
+  font-size: 1.7rem;
+  position: relative;
   color: aqua;
 }
 
