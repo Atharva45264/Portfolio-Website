@@ -245,80 +245,80 @@ html {
   scroll-behavior: smooth;
 }
 /* Add spacing between About and Services section */
-#services {
-    padding: 80px 10%;
-    background-color: rgb(8, 8, 74);
-    text-align: center;
-    margin-top: 400px; /* Extra space from About section */
+/* Section Styling */
+.skills-frameworks-section {
+  padding: 50px 10%;
+  background-color: rgb(8, 8, 74);
+  color: white;
+  text-align: center;
+}
+
+/* Add spacing below the heading */
+.skills-frameworks-section h1 {
+  margin-bottom: 80px;
+  color: aqua; /* Adjust the gap as needed */
+}
+
+/* Flex container for left (skills) and right (frameworks) */
+.skills-frameworks-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+/* Common Styling for Skills & Frameworks */
+.skills, .frameworks {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background: rgb(53, 24, 155);
+  border-radius: 10px;
+}
+
+/* Icon and Name Styling */
+.skill-items, .framework-items {
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+/* Individual skill and framework styling */
+.skill, .framework {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icon Styling */
+.skill i, .framework i {
+  font-size: 9.2rem; /* Increased size */
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Skill/Framework Name Styling */
+.skill span, .framework span {
+  margin-top: 8px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Hover Effect */
+.skill i:hover, .framework i:hover {
+  color: #ffd700;
+  transform: scale(1.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .skills-frameworks-container {
+    flex-direction: column;
+    gap: 30px;
   }
-  
-  #services h2 {
-    font-size: 3rem;
-    color: aqua;
-    margin-bottom: 40px;
-  }
-  
-  .services-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-  }
-  
-  .service {
-    width: 200px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-    text-align: center;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .service i {
-    font-size: 4rem;
-    color: gold;
-  }
-  
-  .service h3 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    color: white;
-  }
-  
-  /* Skill Bars */
-  .skill-bar {
-    width: 100%;
-    height: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .skill-fill {
-    height: 100%;
-    background: gold;
-    transition: width 1s ease-in-out;
-  }
-  
-  .html { width: 100%; }
-  .css { width: 50%; }
-  .js { width: 40%; }
-  .python { width: 50%; }
-  .java { width: 40%; }
-  
-  .service span {
-    display: block;
-    margin-top: 5px;
-    color: white;
-    font-size: 1.2rem;
-  }
-  
-  /* Hover effect */
-  .service:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px gold, 0 0 30px gold;
-  }
+}
     
